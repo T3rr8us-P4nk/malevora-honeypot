@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <h1>Login</h1>
+    <form action="/admin" method="POST">
+        <div class="container">
+            <label for="username">Username</label>
+            <input type="text" name="username" placeholder="Enter Username">
+            <label for="password">Password</label>
+            <input type="password" name="password" placeholder="Enter Password">
+            <input type="submit" value="Login">
+        </div>
+    </form>
+    {% if response is not none %}
+    <script>alert("{{response}}")</script>
+    {% endif %}
+</body>
+</html>
